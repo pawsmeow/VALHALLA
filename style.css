@@ -159,13 +159,15 @@ header {
     line-height: 24px; 
 }
 .hoyo-icon::before {
+    /* Единый символ Звезды/Aether Symbol */
     content: '✦'; 
     font-family: 'Cinzel', serif;
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
     line-height: 1;
     color: var(--celestial-gold);
- 
-    text-shadow: 0 0 5px var(--celestial-gold), 0 0 10px var(--aether-dust);
+    
+    /* ИЗМЕНЯЕМ: Уменьшаем радиус и количество теней для более мягкого свечения */
+    text-shadow: 0 0 3px var(--celestial-gold), 0 0 6px var(--aether-dust);
 }
 .hoyo-button[data-icon="telegram"] .hoyo-icon::before { content: 'T'; font-size: 1.2rem;}
 .hoyo-button[data-icon="discord"] .hoyo-icon::before { content: 'D'; font-size: 1.2rem;}
